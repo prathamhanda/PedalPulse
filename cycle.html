@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('https://images.unsplash.com/photo-1534787238916-9ba6764efd4f?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center/cover no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: blur(10px); /* Adjust the blur intensity */
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressive QR Scanner</title>
+    <link rel="stylesheet" href="rent.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Scan & Rent</h1>
+            <p>Experience the Future of Cycling</p>
+        </header>
+
+        <div id="scanner-container">
+            <div id="interactive" class="viewport"></div>
+        </div>
+
+        <div id="rental-info">
+            <p id="qr-code-result">Scan a QR code to rent a cycle.</p>
+            <button id="rent-button" disabled>Rent Cycle</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.rawgit.com/serratus/quaggaJS/0.12.1/dist/quagga.min.js"></script>
+    <script src="scam.js"></script>
+
+
+</body>
+</html>

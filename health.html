@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Burn Calculator</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.png">
+
+
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+   
+
+    <div class="calculator">
+        <!-- <h5 id="score" style="text-align: end;"><a href="score.html">Your Score</a></h5> -->
+        <h1>Calorie Burn Calculator</h1>
+        <label for="activity">Activity:</label>
+        <select id="activity" name="activity">
+         
+            
+            <option value="cycling" selected>Cycling</option>
+          
+            
+        </select>
+        
+
+        <br/>
+
+        <label for="duration">Duration (minutes):</label>
+        <input type="number" id="duration" name="duration" min="1" required>
+
+        <br/>
+
+        <label for="weight">Your Weight (kg):</label>
+        <input type="number" id="weight" name="weight" min="1" required>
+
+        <br/>
+
+        <button type="button" id="calculateBtn">Calculate</button>
+
+        <hr/>
+
+        <h4 id="result">Calories Burned: </h4>  
+        
+    </div>
+    
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
