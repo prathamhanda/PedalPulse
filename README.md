@@ -1,2 +1,2 @@
-# hacktu
+# PedalPulse
 HackTU 5.0 project by Hackstreet Boys
